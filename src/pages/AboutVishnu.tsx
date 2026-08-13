@@ -58,7 +58,7 @@ export function AboutVishnu() {
     title: 'About Vishnu Vardhan Burri | Backend Systems & AI Infrastructure Engineer',
     description:
       'Official profile of Vishnu Vardhan Burri, a backend systems and AI infrastructure engineer, founder of Xavira Tech Labs, and production-focused architecture consultant.',
-    image: '/images/vishnu-headshot.jpeg',
+    image: '/images/gallery/vishnu/media_1786612562943.jpg',
   });
 
   return (
@@ -77,6 +77,22 @@ export function AboutVishnu() {
             AI guardrails, and platform architecture for founders and technical teams that cannot afford
             fragile systems.
           </p>
+          <div className="mt-8 flex items-center gap-5">
+            <div className="relative aspect-[3/4] w-28 overflow-hidden rounded-2xl border border-white/10 bg-black shrink-0 shadow-lg">
+              <img
+                src="/images/gallery/vishnu/media_1786612562943.jpg"
+                alt="Vishnu Vardhan Burri - Bangalore Electronic City IT Tech Center"
+                className="h-full w-full object-cover object-top"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+            <div>
+              <div className="font-mono text-[9px] uppercase tracking-widest text-blue-400">Bangalore, India</div>
+              <div className="text-xs font-bold text-white mt-0.5">Vishnu Vardhan Burri</div>
+              <div className="text-[11px] text-zinc-400 mt-1">Director &amp; CEO · XAVIRA Technologies</div>
+            </div>
+          </div>
         </div>
 
         <motion.div
@@ -164,10 +180,10 @@ export function AboutVishnu() {
             <h3 className="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-white">Official Presence</h3>
             <p className="text-xs leading-6 text-zinc-500">Canonical profiles, search aliases, and trusted public links.</p>
           </Link>
-          <Link to="/gallery" className="group rounded-3xl border border-white/5 bg-white/[0.03] p-6 transition-colors hover:border-blue-500/40">
+          <Link to="/case-studies" className="group rounded-3xl border border-white/5 bg-white/[0.03] p-6 transition-colors hover:border-blue-500/40">
             <ArrowUpRight className="mb-10 text-blue-500 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" size={18} />
-            <h3 className="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-white">Photo Gallery</h3>
-            <p className="text-xs leading-6 text-zinc-500">Official Vishnu photo set with image-search friendly captions.</p>
+            <h3 className="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-white">Case Studies</h3>
+            <p className="text-xs leading-6 text-zinc-500">10 production builds, real constraints, and verified deliverables.</p>
           </Link>
           <Link to="/experience" className="group rounded-3xl border border-white/5 bg-white/[0.03] p-6 transition-colors hover:border-blue-500/40">
             <ArrowUpRight className="mb-10 text-blue-500 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" size={18} />

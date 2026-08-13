@@ -26,7 +26,6 @@ export function OSShell({ children }: { children: React.ReactNode }) {
     { name: 'Architecture', path: '/architecture' },
     { name: 'Case Studies', path: '/case-studies' },
     { name: 'Xavira Tech', path: '/xavira' },
-    { name: 'Gallery', path: '/gallery' },
     { name: 'Experience', path: '/experience' },
     { name: 'Blog', path: '/blog' },
     { name: 'Pricing', path: '/pricing' },
@@ -191,16 +190,6 @@ export function OSShell({ children }: { children: React.ReactNode }) {
                   className={cn(location.pathname === '/xavira' && 'border-blue-500/30 bg-blue-500/10 text-white')}
                 >
                   <Link to="/xavira">Xavira</Link>
-                </NavigationMenuTopLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuTopLink
-                  asChild
-                  active={location.pathname === '/gallery' || location.pathname === '/gallary'}
-                  className={cn((location.pathname === '/gallery' || location.pathname === '/gallary') && 'border-blue-500/30 bg-blue-500/10 text-white')}
-                >
-                  <Link to="/gallery">Gallery</Link>
                 </NavigationMenuTopLink>
               </NavigationMenuItem>
 

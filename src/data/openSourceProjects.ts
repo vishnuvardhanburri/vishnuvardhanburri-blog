@@ -39,7 +39,7 @@ export const OPEN_SOURCE_PROJECTS: OpenSourceProject[] = [
       'CI/CD Enforcement',
     ],
     githubUrl: 'https://github.com/vishnuvardhanburri/zk-proof-engine',
-    openSsfUrl: 'https://www.bestpractices.dev/en/projects/14033/passing',
+    openSsfUrl: 'https://www.bestpractices.dev/en/users/54504',
     problem:
       'Modern software supply chains are highly vulnerable to artifact tampering, compromised build environments, unauthorized CI/CD pipeline modifications, and untrusted third-party release binaries.',
     whatItDoes:
@@ -84,7 +84,7 @@ export const OPEN_SOURCE_PROJECTS: OpenSourceProject[] = [
       'Python Security',
     ],
     githubUrl: 'https://github.com/vishnuvardhanburri/Waf',
-    openSsfUrl: 'https://www.bestpractices.dev/en/projects/14045',
+    openSsfUrl: 'https://www.bestpractices.dev/en/users/54504',
     problem:
       'Web applications face continuous automated scanning, SQL injection attempts, cross-site scripting (XSS), command injection, and payload tampering that bypass default application framework controls.',
     whatItDoes:
@@ -129,7 +129,7 @@ export const OPEN_SOURCE_PROJECTS: OpenSourceProject[] = [
       'DevSecOps',
     ],
     githubUrl: 'https://github.com/vishnuvardhanburri/Sovereign-Shield',
-    openSsfUrl: 'https://www.bestpractices.dev/en/projects/14046',
+    openSsfUrl: 'https://www.bestpractices.dev/en/users/54504',
     problem:
       'Organizations deploying AI models in regulated enterprise domains face privacy leaks, prompt injection attacks, unmonitored decision-making, and lack of compliance audit trails.',
     whatItDoes:

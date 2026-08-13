@@ -6,7 +6,6 @@ import { usePageMeta } from '@/src/lib/seo';
 import { OpenSourceSecuritySection } from '@/src/components/OpenSourceSecuritySection';
 import { OpenSSFTrackRecord } from '@/src/components/OpenSSFTrackRecord';
 import { CompanyLeadershipSection } from '@/src/components/CompanyLeadershipSection';
-import { ExecutiveConferencesSection } from '@/src/components/ExecutiveConferencesSection';
 import { TrustSection } from '@/src/components/TrustSection';
 import { ContactCtaSection } from '@/src/components/ContactCtaSection';
 
@@ -182,8 +181,6 @@ export function Home() {
       {/* SECTION 3: XAVIRA TECHNOLOGIES & LEADERSHIP */}
       <CompanyLeadershipSection />
 
-      {/* SECTION 4: BANGALORE & DELHI EXECUTIVE TECH CONFERENCES */}
-      <ExecutiveConferencesSection />
 
       {/* SECTION 5: TRUST & VERIFIABILITY */}
       <TrustSection />

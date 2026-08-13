@@ -70,12 +70,13 @@ export function CompanyLeadershipSection() {
             <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950/80 p-8 shadow-[0_28px_90px_rgba(0,0,0,0.7)]">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/10 bg-black">
                 <img
-                  src="/images/vishnu-headshot.jpeg"
+                  src="/images/gallery/vishnu/media_1786612568431.jpg"
                   alt="Vishnu Vardhan Burri - Director & CEO at XAVIRA Technologies"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                   loading="lazy"
+                  decoding="async"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70" />
               </div>
 
               <div className="mt-6">
