@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.xaviratechlabs.com/sitemap.xml
+Llms-Txt: https://www.xaviratechlabs.com/llms.txt

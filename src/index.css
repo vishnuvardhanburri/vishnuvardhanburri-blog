@@ -1,0 +1,217 @@
+/* Tailwind v4: restrict source scanning for smaller CSS + faster builds. */
+@import "tailwindcss" source(none);
+@source "../index.html";
+@source "./**/*.{ts,tsx}";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-brand-primary: #ffffff;
+  --color-brand-secondary: #a1a1aa;
+  --color-brand-accent: #3b82f6;
+  --color-bg-base: #000000;
+  --color-bg-surface: #09090b;
+  --color-border-subtle: #27272a;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased selection:bg-blue-500/30 selection:text-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: rgba(59, 130, 246, 0.3);
+    color: white;
+  }
+}
+
+@layer utilities {
+  /* Minimal v4-friendly replacements for common tailwindcss-animate utilities.
+     Used by the Radix NavigationMenu for premium enter/exit transitions. */
+  @keyframes tw-enter {
+    from {
+      opacity: var(--tw-enter-opacity, 1);
+      transform:
+        translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0)
+        scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), 1);
+    }
+  }
+
+  @keyframes tw-exit {
+    to {
+      opacity: var(--tw-exit-opacity, 1);
+      transform:
+        translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0)
+        scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), 1);
+    }
+  }
+
+  .animate-in {
+    animation: tw-enter var(--tw-enter-duration, 200ms) var(--tw-enter-ease, cubic-bezier(0.22, 1, 0.36, 1))
+      both;
+  }
+
+  .animate-out {
+    animation: tw-exit var(--tw-exit-duration, 180ms) var(--tw-exit-ease, cubic-bezier(0.22, 1, 0.36, 1)) both;
+  }
+
+  .fade-in,
+  .fade-in-0 {
+    --tw-enter-opacity: 0;
+  }
+
+  .fade-out,
+  .fade-out-0 {
+    --tw-exit-opacity: 0;
+  }
+
+  .zoom-in-90 {
+    --tw-enter-scale: 0.9;
+  }
+
+  .zoom-out-95 {
+    --tw-exit-scale: 0.95;
+  }
+
+  .slide-in-from-right-52 {
+    --tw-enter-translate-x: 13rem;
+  }
+
+  .slide-in-from-left-52 {
+    --tw-enter-translate-x: -13rem;
+  }
+
+  .slide-out-to-right-52 {
+    --tw-exit-translate-x: 13rem;
+  }
+
+  .slide-out-to-left-52 {
+    --tw-exit-translate-x: -13rem;
+  }
+
+  @keyframes ambient-drift {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 60px 60px;
+    }
+  }
+
+  @keyframes premium-rise {
+    from {
+      opacity: 0.001;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .glass {
+    @apply bg-zinc-950/70 border border-white/10;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+  }
+
+  .grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .grain-texture {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.5) 0 1px, transparent 1px),
+      radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.35) 0 1px, transparent 1px);
+    background-size: 7px 7px, 11px 11px;
+    mix-blend-mode: overlay;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .assistant-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(59, 130, 246, 0.65) rgba(39, 39, 42, 0.45);
+  }
+
+  .assistant-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .assistant-scroll::-webkit-scrollbar-track {
+    background: rgba(24, 24, 27, 0.7);
+    border-radius: 999px;
+  }
+
+  .assistant-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.8), rgba(16, 185, 129, 0.55));
+    border: 2px solid rgba(24, 24, 27, 0.9);
+    border-radius: 999px;
+  }
+
+  .assistant-scroll-x {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(59, 130, 246, 0.45) transparent;
+  }
+
+  .assistant-scroll-x::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .assistant-scroll-x::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.45);
+    border-radius: 999px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main a,
+  main button {
+    transition:
+      transform 220ms ease,
+      border-color 220ms ease,
+      background-color 220ms ease,
+      color 220ms ease,
+      opacity 220ms ease;
+  }
+
+  main a:hover,
+  main button:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

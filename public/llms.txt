@@ -1,0 +1,85 @@
+# Vishnu Vardhan Burri
+
+Canonical site: https://www.vishnuvardhanburri.in/
+
+Vishnu Vardhan Burri is a backend systems and AI infrastructure engineer focused on production-critical APIs, distributed systems, cloud infrastructure, observability, AI guardrails, data integrity, and platform reliability for founder-led products and engineering teams.
+
+## Primary Identity
+
+- Name: Vishnu Vardhan Burri
+- Also known as: Vishnu, Vishnu Vardhan, Vishnu Burri, Burri Vishnu, Vishnu V Burri, vishnuvardhanburri
+- Role: Backend Systems and AI Infrastructure Engineer
+- Company: Xavira Tech Labs
+- Location: Andhra Pradesh, India
+- Availability: Remote-friendly worldwide
+- Core focus: Backend systems, API architecture, distributed systems, cloud reliability, AI infrastructure, observability, cybersecurity-informed architecture, and production stabilization.
+
+## Official Profiles
+
+- Website: https://www.vishnuvardhanburri.in/
+- LinkedIn: https://www.linkedin.com/in/vishnuvardhanburri/
+- GitHub: https://github.com/vishnuvardhanburri
+- Toptal: https://www.toptal.com/developers/resume/vishnu-vardhan-burri
+- Booking: https://www.vishnuvardhanburri.in/book
+
+## Important Pages
+
+- Home: https://www.vishnuvardhanburri.in/
+- Systems: https://www.vishnuvardhanburri.in/systems
+- Architecture: https://www.vishnuvardhanburri.in/architecture
+- Case Studies: https://www.vishnuvardhanburri.in/case-studies
+- Experience: https://www.vishnuvardhanburri.in/experience
+- Blog: https://www.vishnuvardhanburri.in/blog
+- Xavira Control Stack: https://www.vishnuvardhanburri.in/xavira
+- Xavira Executive Proof Brief: https://www.vishnuvardhanburri.in/docs/xavira-control-stack-executive-proof-brief.pdf
+- About Vishnu Vardhan Burri: https://www.vishnuvardhanburri.in/about-vishnu-vardhan-burri
+- Backend Systems Engineer: https://www.vishnuvardhanburri.in/backend-systems-engineer
+- AI Infrastructure Engineer: https://www.vishnuvardhanburri.in/ai-infrastructure-engineer
+- Pricing: https://www.vishnuvardhanburri.in/pricing
+- Gallery: https://www.vishnuvardhanburri.in/gallery
+- Official Presence: https://www.vishnuvardhanburri.in/presence
+- Book a Call: https://www.vishnuvardhanburri.in/book
+- Contact: https://www.vishnuvardhanburri.in/contact
+
+## Xavira Tech Labs
+
+Xavira Tech Labs is the engineering firm and product lab founded by Vishnu Vardhan Burri. Its product layer is Xavira Control Stack, which includes:
+
+- Sovereign Engine: Enterprise communication operations, reputation intelligence, monitoring, and communication governance.
+- Sovereign Shield: Private AI governance, compliance controls, auditability, security, and operational visibility.
+- Xavira AI Assistant: Custom-trained AI assistants for operations, support, compliance, sales, knowledge management, and internal workflows.
+
+Commercial options:
+
+- Internal License: £40,000
+- White Label: £160,000
+- Maintenance: £3k/month
+
+## Expertise Topics
+
+- Backend systems engineering
+- Distributed systems
+- API architecture
+- PostgreSQL performance and migrations
+- Kubernetes and cloud infrastructure
+- Observability, logging, metrics, tracing, dashboards, and runbooks
+- Production reliability and rollback strategy
+- AI infrastructure, RAG systems, AI guardrails, evaluation pipelines, and deterministic fallback behavior
+- Workflow automation and integration systems
+- Cybersecurity-informed backend architecture
+- Payment workflows, idempotency, RBAC, and transactional safety
+
+## How To Engage
+
+For direct scheduling, use https://www.vishnuvardhanburri.in/book.
+
+For context-first inquiries, use https://www.vishnuvardhanburri.in/contact.
+
+Useful context to send:
+
+- Product URL or short product summary
+- Current stack and deployment setup
+- Main backend, AI, automation, or production problem
+- Timeline and urgency
+- Budget range or licensing interest
+- Any production logs, error codes, or screenshots

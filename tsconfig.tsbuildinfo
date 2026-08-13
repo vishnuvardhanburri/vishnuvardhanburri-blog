@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/cleandashboardview.tsx","./src/data/realtargetcompanies.ts","./src/services/ollamaservice.ts","./src/utils/dealscoring.ts","./src/utils/deliverabilitygate.ts"],"version":"5.8.3"}
