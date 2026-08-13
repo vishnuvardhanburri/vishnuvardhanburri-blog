@@ -114,23 +114,6 @@ const fitChecklist = [
   'You are interested in commercializing infrastructure services.',
 ] as const;
 
-const demoVideos = [
-  {
-    id: 'sovereign-engine-demo',
-    title: 'Sovereign Engine Demo',
-    description: 'Communication operations, reputation intelligence, monitoring, and outbound governance.',
-    href: 'https://youtu.be/5eP6cWxaNdI?si=lSvfqthUhKJ5a75F',
-    embed: 'https://www.youtube-nocookie.com/embed/5eP6cWxaNdI',
-  },
-  {
-    id: 'sovereign-shield-demo',
-    title: 'Sovereign Shield Demo',
-    description: 'AI governance, compliance controls, auditability, and operational visibility.',
-    href: 'https://youtu.be/4sn0JBHLCj0?si=ayhoTfL4kLtKWjjL',
-    embed: 'https://www.youtube-nocookie.com/embed/4sn0JBHLCj0',
-  },
-] as const;
-
 const proofBriefHref = '/docs/xavira-control-stack-executive-proof-brief.pdf';
 
 function CheckList({ items }: { items: readonly string[] }) {
@@ -341,67 +324,27 @@ export function Xavira() {
           </div>
         </section>
 
-        <section id="product-demos" className="mt-20 scroll-mt-28">
-          <div className="mb-10 flex items-end justify-between gap-6">
-            <div>
-              <span className="mb-4 block font-mono text-[10px] uppercase tracking-[0.4em] text-zinc-600">
-                Product Demonstrations
-              </span>
-              <h2 className="text-3xl font-bold italic tracking-tighter md:text-5xl">Watch the control stack in motion.</h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {demoVideos.map((video) => (
-              <article
-                key={video.title}
-                id={video.id}
-                className="group relative overflow-hidden rounded-3xl border border-white/5 bg-zinc-950/55 p-8 transition-colors hover:border-blue-500/30"
-              >
-                <div className="aspect-video overflow-hidden rounded-2xl border border-white/5 bg-black">
-                  <iframe
-                    title={video.title}
-                    src={video.embed}
-                    className="h-full w-full"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold uppercase italic tracking-tight text-white">{video.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-zinc-500">{video.description}</p>
-                  </div>
-                  <a
-                    href={video.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex shrink-0 items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-blue-400 transition-colors hover:text-white"
-                  >
-                    Open YouTube <ArrowUpRight size={13} />
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-20 rounded-3xl border border-blue-500/10 bg-blue-500/5 p-10 text-center">
-          <h2 className="text-2xl font-bold uppercase italic tracking-tight md:text-3xl">
-            Interested in Enterprise Infrastructure?
+        <section className="mt-20 rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-950/20 via-zinc-950 to-black p-10 text-center">
+          <h2 className="text-2xl font-bold uppercase italic tracking-tight md:text-3xl text-white">
+            Interested in XAVIRA Technologies Infrastructure?
           </h2>
+          <p className="mt-4 text-sm text-zinc-400 max-w-xl mx-auto">
+            Explore enterprise packages, custom system deployment, and private AI governance on our official portal.
+          </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              to="/xavira/book"
-              className="group flex w-full max-w-xs items-center justify-center gap-3 bg-white px-6 py-4 text-[10px] font-bold uppercase tracking-[0.22em] text-black transition-all hover:bg-white/90 sm:w-auto sm:max-w-none"
+            <a
+              href="https://www.xaviratechlabs.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="group flex w-full max-w-xs items-center justify-center gap-3 rounded-full bg-blue-500 px-8 py-4 font-mono text-xs font-bold uppercase tracking-widest text-white shadow-[0_12px_40px_rgba(59,130,246,0.35)] transition-all hover:bg-blue-600 sm:w-auto sm:max-w-none"
             >
-              Qualify & Book <ArrowUpRight size={14} />
-            </Link>
+              Visit Official Platform <ArrowUpRight size={14} />
+            </a>
             <Link
-              to="/xavira/book"
-              className="group flex w-full max-w-xs items-center justify-center gap-3 border border-white/10 px-6 py-4 text-[10px] font-bold uppercase tracking-[0.22em] text-zinc-300 transition-all hover:border-white/40 sm:w-auto sm:max-w-none"
+              to="/contact"
+              className="group flex w-full max-w-xs items-center justify-center gap-3 rounded-full border border-white/20 bg-white/5 px-8 py-4 font-mono text-xs font-bold uppercase tracking-widest text-zinc-200 transition-all hover:border-white hover:bg-white hover:text-black sm:w-auto sm:max-w-none"
             >
-              Send Buyer Details <KeyRound size={14} className="text-blue-400" />
+              Contact Engineering Team <KeyRound size={14} className="text-blue-400" />
             </Link>
           </div>
         </section>

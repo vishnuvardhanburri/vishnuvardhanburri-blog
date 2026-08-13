@@ -108,12 +108,14 @@ export function Pricing() {
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="max-w-xl text-xs leading-relaxed text-zinc-600">{plan.notes}</p>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-[10px] font-bold uppercase tracking-[0.22em] text-zinc-200 transition-colors hover:border-white/30 hover:bg-white/10"
+                  <a
+                    href="https://www.xaviratechlabs.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-blue-500/40 bg-blue-500/10 px-5 py-3 text-[10px] font-bold uppercase tracking-[0.22em] text-blue-300 transition-colors hover:border-blue-500 hover:bg-blue-500 hover:text-white"
                   >
-                    Enquire <ArrowUpRight size={14} className="text-blue-400" />
-                  </Link>
+                    Enquire on XAVIRA <ArrowUpRight size={14} />
+                  </a>
                 </div>
               </div>
             </motion.div>
