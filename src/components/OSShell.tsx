@@ -26,6 +26,7 @@ export function OSShell({ children }: { children: React.ReactNode }) {
     { name: 'Architecture', path: '/architecture' },
     { name: 'Case Studies', path: '/case-studies' },
     { name: 'Xavira Tech', path: '/xavira' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Experience', path: '/experience' },
     { name: 'Blog', path: '/blog' },
     { name: 'Pricing', path: '/pricing' },

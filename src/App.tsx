@@ -27,6 +27,7 @@ const BackendSystemsEngineer = lazy(() => import('./pages/BackendSystemsEngineer
 const AiInfrastructureEngineer = lazy(() => import('./pages/AiInfrastructureEngineer').then(module => ({ default: module.AiInfrastructureEngineer })));
 const Contact = lazy(() => import('./pages/Contact').then(module => ({ default: module.Contact })));
 const Pricing = lazy(() => import('./pages/Pricing').then(module => ({ default: module.Pricing })));
+const GalleryPage = lazy(() => import('./pages/GalleryPage').then(module => ({ default: module.GalleryPage })));
 const PortfolioAssistant = lazy(() =>
   import('./components/PortfolioAssistant').then(module => ({ default: module.PortfolioAssistant }))
 );
@@ -64,7 +65,10 @@ function AppRoutes() {
         <Route path="/backend-systems-engineer" element={<BackendSystemsEngineer />} />
         <Route path="/ai-infrastructure-engineer" element={<AiInfrastructureEngineer />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallary" element={<GalleryPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Suspense>
   );

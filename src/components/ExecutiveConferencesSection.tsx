@@ -16,7 +16,7 @@ export interface ConferenceMoment {
 export const EXECUTIVE_CONFERENCE_MOMENTS: ConferenceMoment[] = [
   {
     id: 'bangalore-electronic-city',
-    image: '/images/executive/electronic-city-conference-vishnu-vardhan-burri.png',
+    image: '/images/executive/electronic-city-conference-vishnu-vardhan-burri.jpg',
     title: 'Bangalore Electronic City IT Tech Center — Technical Strategy',
     location: 'Electronic City IT Tech Center, Bangalore',
     cityTag: 'Bangalore, KA',
@@ -27,7 +27,7 @@ export const EXECUTIVE_CONFERENCE_MOMENTS: ConferenceMoment[] = [
   },
   {
     id: 'bangalore-tech-summit',
-    image: '/images/executive/bangalore-tech-summit-vishnu-vardhan-burri.png',
+    image: '/images/executive/bangalore-tech-summit-vishnu-vardhan-burri.jpg',
     title: 'Bangalore Tech Leadership & Company Meeting',
     location: 'Bangalore IT Tech Corridor, Bangalore',
     cityTag: 'Bangalore, KA',
@@ -38,7 +38,7 @@ export const EXECUTIVE_CONFERENCE_MOMENTS: ConferenceMoment[] = [
   },
   {
     id: 'delhi-security-summit',
-    image: '/images/executive/delhi-security-summit-vishnu-vardhan-burri.png',
+    image: '/images/executive/delhi-security-summit-vishnu-vardhan-burri.jpg',
     title: 'Delhi Cybersecurity & AI Governance Summit',
     location: 'New Delhi Tech Conference Center, Delhi',
     cityTag: 'New Delhi, DL',
@@ -49,7 +49,7 @@ export const EXECUTIVE_CONFERENCE_MOMENTS: ConferenceMoment[] = [
   },
   {
     id: 'delhi-tech-conference',
-    image: '/images/executive/delhi-tech-conference-vishnu-vardhan-burri.png',
+    image: '/images/executive/delhi-tech-conference-vishnu-vardhan-burri.jpg',
     title: 'Delhi Technical Leadership & Security Forum',
     location: 'New Delhi Conference Center, Delhi',
     cityTag: 'New Delhi, DL',

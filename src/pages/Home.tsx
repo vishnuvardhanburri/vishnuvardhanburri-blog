@@ -14,10 +14,10 @@ const FEATURED_CASE_STUDY_IDS = ['business-web-platform', 'high-risk-migration',
 
 export function Home() {
   usePageMeta({
-    title: 'XAVIRA Technologies | Open Source Security & Systems Engineering',
+    title: 'Vishnu Vardhan Burri | Backend & AI Infrastructure Engineer | XAVIRA Technologies',
     description:
-      'XAVIRA Technologies builds open-source security infrastructure, zero-knowledge proof engines, web application firewalls, private AI governance, and production-critical backend systems.',
-    image: '/images/vishnu-hero.png',
+      'Backend Systems and AI Infrastructure Engineer. Director & CEO of XAVIRA Technologies. Building high-concurrency systems, robust security protocols, and human-governed AI architectures.',
+    image: '/images/vishnu-hero.jpg',
   });
 
   const featured = FEATURED_CASE_STUDY_IDS
@@ -123,10 +123,12 @@ export function Home() {
             >
               <div className="relative mx-auto aspect-[4/5] max-w-[520px] overflow-hidden rounded-3xl border border-white/10 bg-zinc-950/70 shadow-[0_28px_90px_rgba(0,0,0,0.75)]">
                 <img
-                  src="/images/vishnu-hero.png"
-                  alt="Vishnu Vardhan Burri - Director & CEO at XAVIRA Technologies"
-                  className="h-full w-full object-cover opacity-95"
-                  loading="eager"
+                  src="/images/vishnu-hero.jpg"
+                  alt="Vishnu Vardhan Burri - XAVIRA Technologies CEO"
+                  width={600}
+                  height={800}
+                  fetchPriority="high"
+                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
                   decoding="async"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(0,0,0,0.62)_0%,rgba(0,0,0,0.12)_55%,rgba(0,0,0,0.78)_100%)]" />
