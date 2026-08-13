@@ -197,6 +197,16 @@ export function OSShell({ children }: { children: React.ReactNode }) {
               <NavigationMenuItem>
                 <NavigationMenuTopLink
                   asChild
+                  active={location.pathname === '/gallery' || location.pathname === '/gallary'}
+                  className={cn((location.pathname === '/gallery' || location.pathname === '/gallary') && 'border-blue-500/30 bg-blue-500/10 text-white')}
+                >
+                  <Link to="/gallery">Gallery</Link>
+                </NavigationMenuTopLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTopLink
+                  asChild
                   active={location.pathname === '/pricing'}
                   className={cn(location.pathname === '/pricing' && 'border-blue-500/30 bg-blue-500/10 text-white')}
                 >
