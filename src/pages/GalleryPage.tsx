@@ -11,23 +11,23 @@ interface GalleryPhoto {
   location: string;
 }
 
-// Only real photos — 4 executive portraits uploaded today + 4 conference location shots
+// 4 unique real portraits uploaded today — no duplicates
 const PHOTOS: GalleryPhoto[] = [
   {
     src: '/images/gallery/vishnu/media_1786612562943.jpg',
     alt: 'Vishnu Vardhan Burri — Bangalore Electronic City IT Tech Center',
-    caption: 'Bangalore Electronic City IT Tech Center',
+    caption: 'Electronic City IT Tech Center',
     location: 'Bangalore, KA',
   },
   {
     src: '/images/gallery/vishnu/media_1786612568431.jpg',
     alt: 'Vishnu Vardhan Burri — Technical Leadership, Bangalore',
-    caption: 'Technical Leadership, Bangalore',
+    caption: 'Technical Leadership',
     location: 'Bangalore, KA',
   },
   {
     src: '/images/gallery/vishnu/media_1786612574004.jpg',
-    alt: 'Vishnu Vardhan Burri — Delhi Security Summit',
+    alt: 'Vishnu Vardhan Burri — Delhi Cybersecurity & AI Governance Summit',
     caption: 'Delhi Cybersecurity & AI Summit',
     location: 'New Delhi, DL',
   },
@@ -37,37 +37,13 @@ const PHOTOS: GalleryPhoto[] = [
     caption: 'Delhi Technical Leadership Forum',
     location: 'New Delhi, DL',
   },
-  {
-    src: '/images/executive/electronic-city-conference-vishnu-vardhan-burri.jpg',
-    alt: 'Vishnu Vardhan Burri presenting at Bangalore Electronic City IT Tech Center',
-    caption: 'Electronic City IT Tech Center',
-    location: 'Bangalore, KA',
-  },
-  {
-    src: '/images/executive/bangalore-tech-summit-vishnu-vardhan-burri.jpg',
-    alt: 'Vishnu Vardhan Burri at Bangalore Tech Summit',
-    caption: 'Bangalore Tech Company Meeting',
-    location: 'Bangalore, KA',
-  },
-  {
-    src: '/images/executive/delhi-security-summit-vishnu-vardhan-burri.jpg',
-    alt: 'Vishnu Vardhan Burri at Delhi AI & Security Summit',
-    caption: 'AI Governance & Security Summit',
-    location: 'New Delhi, DL',
-  },
-  {
-    src: '/images/executive/delhi-tech-conference-vishnu-vardhan-burri.jpg',
-    alt: 'Vishnu Vardhan Burri at Delhi Tech Conference',
-    caption: 'Delhi Technical Leadership Panel',
-    location: 'New Delhi, DL',
-  },
 ];
 
 export function GalleryPage() {
   usePageMeta({
     title: 'Gallery | Vishnu Vardhan Burri | XAVIRA Technologies',
     description:
-      'Company meetings, technical discussions and security conferences at Bangalore Electronic City IT Tech Center and Delhi. Vishnu Vardhan Burri, Director & CEO of XAVIRA Technologies.',
+      'Executive presence — company meetings, technical discussions and security conferences at Bangalore Electronic City IT Tech Center and Delhi. Vishnu Vardhan Burri, Director & CEO of XAVIRA Technologies.',
     image: '/images/gallery/vishnu/media_1786612574004.jpg',
   });
 
@@ -75,8 +51,8 @@ export function GalleryPage() {
 
   return (
     <div className="min-h-screen bg-black">
-      {/* Page Header */}
-      <div className="px-5 pt-28 pb-10 sm:px-6 lg:px-12 max-w-7xl mx-auto">
+      {/* Header */}
+      <div className="px-5 pt-28 pb-10 sm:px-6 lg:px-12 max-w-6xl mx-auto">
         <Link
           to="/"
           className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors mb-8"
@@ -87,32 +63,32 @@ export function GalleryPage() {
           Gallery
         </h1>
         <p className="mt-3 text-sm text-zinc-500 max-w-xl">
-          Company meetings, technical discussions and conferences — Bangalore Electronic City IT Tech Center &amp; New Delhi.
+          Bangalore Electronic City IT Tech Center &amp; New Delhi — company meetings and technical discussions.
         </p>
       </div>
 
-      {/* Masonry Grid */}
-      <div className="px-5 pb-24 sm:px-6 lg:px-12 max-w-7xl mx-auto">
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-gap:0.75rem]">
+      {/* 2×2 Photo Grid */}
+      <div className="px-5 pb-24 sm:px-6 lg:px-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {PHOTOS.map((photo, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35, delay: i * 0.05 }}
-              className="group relative mb-3 break-inside-avoid cursor-pointer overflow-hidden rounded-2xl bg-zinc-900"
+              transition={{ duration: 0.35, delay: i * 0.07 }}
+              className="group relative cursor-pointer overflow-hidden rounded-2xl bg-zinc-900 aspect-[3/4]"
               onClick={() => setLightbox(photo)}
             >
               <img
                 src={photo.src}
                 alt={photo.alt}
-                loading={i < 4 ? 'eager' : 'lazy'}
+                loading={i < 2 ? 'eager' : 'lazy'}
                 decoding="async"
-                className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Hover overlay — minimal caption */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+              {/* Hover overlay — just location + short title */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
                 <div className="flex items-center gap-1 mb-0.5">
                   <MapPin size={9} className="text-blue-400 shrink-0" />
                   <span className="font-mono text-[8px] uppercase tracking-widest text-blue-300">
@@ -124,7 +100,6 @@ export function GalleryPage() {
                 </p>
               </div>
 
-              {/* Zoom icon */}
               <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="rounded-full bg-black/60 p-1.5 backdrop-blur-sm">
                   <ZoomIn size={11} className="text-white" />
@@ -151,7 +126,7 @@ export function GalleryPage() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.94, opacity: 0 }}
               transition={{ type: 'spring', stiffness: 360, damping: 30 }}
-              className="relative max-w-2xl w-full"
+              className="relative max-w-lg w-full"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -163,9 +138,9 @@ export function GalleryPage() {
               <img
                 src={lightbox.src}
                 alt={lightbox.alt}
-                className="w-full rounded-2xl object-contain max-h-[80vh]"
+                className="w-full rounded-2xl object-contain max-h-[82vh]"
               />
-              <div className="mt-3 flex items-center gap-3">
+              <div className="mt-3 flex items-center gap-2">
                 <MapPin size={11} className="text-blue-400 shrink-0" />
                 <span className="font-mono text-[10px] uppercase tracking-widest text-blue-400">
                   {lightbox.location}
