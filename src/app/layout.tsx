@@ -113,7 +113,7 @@ export default async function RootLayout({
                 "name": "Vishnu Vardhan Burri",
                 "url": "https://www.vishnuvardhanburri.in",
                 "image": "https://www.vishnuvardhanburri.in/gallery/vishnu-me.jpg",
-                "jobTitle": ["Founder "Founder & Chief Executive Officer" Chief Executive Officer (CEO)", "Director", "Principal Architect", "Toptal Top 3% SDE/ML Engineer"],
+                "jobTitle": ["Founder & Chief Executive Officer", "Toptal Top 3% SDE/ML Engineer"],
                 "worksFor": [
                     {
                         "@type": "Organization",
