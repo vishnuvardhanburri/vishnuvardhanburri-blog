@@ -37,16 +37,12 @@ interface CertificateHeroScrollProps {
 }
 
 const CERTIFICATE_POOL = [
-    "Data Analytics on Google Cloud.webp",
-    "Deep Learning Beginner.webp",
-    "Docker, Kubernetes dan DevOps.webp",
-    "Fullstack Programming Untuk Pemula.webp",
-    "Introduction to Generative AI.webp",
-    "Machine Learning Foundations.webp",
-    "Mastering Smart Contract.webp",
-    "Started with Databases.webp",
-    "Supervised Machine Learning Regression and Classification.webp",
-    "elevAIte with Dicoding Program 2025.webp"
+    "vishnu-cert-1.jpg",
+    "vishnu-cert-2.jpg",
+    "vishnu-cert-3.jpg",
+    "vishnu-cert-4.jpg",
+    "vishnu-cert-5.jpg",
+    "vishnu-cert-6.jpg"
 ];
 
 const CertificateHeroScroll: FC<CertificateHeroScrollProps> = ({ onDownloadClick, isLowPowerMode: isLowPowerModeProp }) => {
@@ -62,7 +58,7 @@ const CertificateHeroScroll: FC<CertificateHeroScrollProps> = ({ onDownloadClick
 
     const createCertItem = useCallback((filename: string): ImageItem => ({
         id: filename.replace(/\s+/g, '-').toLowerCase(),
-        src: `/certificate/${filename}`,
+        src: `/certificates/${filename}`,
         alt: filename.replace(/\.(pdf|jpg|jpeg|png|webp)$/i, ''),
         isPdf: /\.pdf$/i.test(filename)
     }), []);

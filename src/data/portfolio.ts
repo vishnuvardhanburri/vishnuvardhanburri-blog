@@ -222,7 +222,8 @@ export const portfolioData: PortfolioData = {
             issuer: 'Linux Foundation',
             date: '2026',
             category: 'certification',
-            credentialUrl: 'https://www.bestpractices.dev/en/users/54504'
+            credentialUrl: 'https://www.bestpractices.dev/en/users/54504',
+            image: '/certificates/vishnu-cert-1.jpg'
         },
         {
             id: 'openssf-gold-pywaf',
@@ -230,7 +231,8 @@ export const portfolioData: PortfolioData = {
             issuer: 'Linux Foundation',
             date: '2026',
             category: 'certification',
-            credentialUrl: 'https://www.bestpractices.dev/en/users/54504'
+            credentialUrl: 'https://www.bestpractices.dev/en/users/54504',
+            image: '/certificates/vishnu-cert-2.jpg'
         },
         {
             id: 'openssf-silver-qsf',
@@ -238,7 +240,35 @@ export const portfolioData: PortfolioData = {
             issuer: 'Linux Foundation',
             date: '2026',
             category: 'certification',
-            credentialUrl: 'https://www.bestpractices.dev/en/users/54504'
+            credentialUrl: 'https://www.bestpractices.dev/en/users/54504',
+            image: '/certificates/vishnu-cert-3.jpg'
+        },
+        {
+            id: 'toptal-sde',
+            title: 'Toptal Verified SDE/ML Engineer (Top 3%)',
+            issuer: 'Toptal',
+            date: '2026',
+            category: 'certification',
+            credentialUrl: 'https://www.toptal.com',
+            image: '/certificates/vishnu-cert-4.jpg'
+        },
+        {
+            id: 'microsoft-ai',
+            title: 'Microsoft AI Cloud Certified',
+            issuer: 'Microsoft',
+            date: '2025',
+            category: 'certification',
+            credentialUrl: 'https://microsoft.com',
+            image: '/certificates/vishnu-cert-5.jpg'
+        },
+        {
+            id: 'cybersecurity-vapt',
+            title: 'Advanced Web & Linux VAPT',
+            issuer: 'IIIT Allahabad',
+            date: '2024',
+            category: 'certification',
+            credentialUrl: 'https://iiita.ac.in',
+            image: '/certificates/vishnu-cert-6.jpg'
         }
     ],
     techStack: [],
