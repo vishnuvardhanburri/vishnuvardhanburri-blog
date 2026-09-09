@@ -17,7 +17,7 @@ interface ProjectData {
 
 const PROJECT_DATA: ProjectData[] = portfolioData.projects.slice(0, 8).map((p: any) => ({
   title: p.title,
-  image: p.thumbnail || "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&fm=webp",
+  image: p.image || "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&fm=webp",
   category: p.category || "Project",
   year: p.year?.toString() || "2026",
   description: p.description,
