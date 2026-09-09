@@ -32,31 +32,38 @@ const signature = Alex_Brush({
 
 export const metadata: Metadata = {
     title: {
-        default: 'Vishnu Vardhan Burri | Principal Architect',
-        template: '%s | Portfolio',
+        default: 'Vishnu Vardhan Burri | Principal Architect & CEO',
+        template: '%s | Vishnu Vardhan Burri',
     },
-    description: 'A passionate developer building digital experiences that inspire. Explore my projects, skills, and professional journey.',
-    keywords: ['developer', 'portfolio', 'web development', 'full stack', 'react', 'nextjs'],
-    authors: [{ name: 'Vishnu Vardhan Burri' }],
+    description: 'Founder & CEO at XAVIRA Technologies | Toptal Top 3% SDE/ML Engineer | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
+    keywords: ['Vishnu Vardhan Burri', 'XAVIRA Technologies', 'Principal Architect', 'Machine Learning Engineer', 'Cybersecurity', 'Toptal SDE', 'London', 'Software Engineer'],
+    authors: [{ name: 'Vishnu Vardhan Burri', url: 'https://www.vishnuvardhanburri.in' }],
     creator: 'Vishnu Vardhan Burri',
     metadataBase: new URL('https://www.vishnuvardhanburri.in'),
+    alternates: {
+        canonical: '/',
+        languages: {
+            'en-US': '/en',
+        },
+    },
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://your-domain.com',
+        url: 'https://www.vishnuvardhanburri.in',
         title: 'Vishnu Vardhan Burri | Principal Architect',
-        description: 'A passionate developer building digital experiences that inspire.',
-        siteName: 'Portfolio',
+        description: 'Founder & CEO at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
+        siteName: 'Vishnu Vardhan Burri',
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Vishnu Vardhan Burri | Principal Architect',
-        description: 'A passionate developer building digital experiences that inspire.',
-        creator: '@yourusername',
+        description: 'Founder & CEO at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
+        creator: '@vishnuvardhanburri',
     },
     robots: {
         index: true,
         follow: true,
+        nocache: false,
         googleBot: {
             index: true,
             follow: true,
@@ -65,12 +72,9 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
-    icons: {
-        icon: [
-            { url: '/vishnuvardhanburri_light.svg', media: '(prefers-color-scheme: light)' },
-            { url: '/vishnuvardhanburri_dark.svg', media: '(prefers-color-scheme: dark)' },
-        ],
-    },
+    verification: {
+        google: 'add-your-google-site-verification-here',
+    }
 };
 
 export const viewport: Viewport = {
