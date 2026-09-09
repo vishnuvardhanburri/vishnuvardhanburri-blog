@@ -223,7 +223,6 @@ export const portfolioData: PortfolioData = {
             date: '2026',
             category: 'certification',
             credentialUrl: 'https://www.bestpractices.dev/en/users/54504',
-            image: '/certificates/vishnu-cert-1.jpg'
         },
         {
             id: 'openssf-gold-pywaf',
@@ -232,7 +231,6 @@ export const portfolioData: PortfolioData = {
             date: '2026',
             category: 'certification',
             credentialUrl: 'https://www.bestpractices.dev/en/users/54504',
-            image: '/certificates/vishnu-cert-2.jpg'
         },
         {
             id: 'openssf-silver-qsf',
@@ -241,7 +239,6 @@ export const portfolioData: PortfolioData = {
             date: '2026',
             category: 'certification',
             credentialUrl: 'https://www.bestpractices.dev/en/users/54504',
-            image: '/certificates/vishnu-cert-3.jpg'
         },
         {
             id: 'toptal-sde',
@@ -250,7 +247,6 @@ export const portfolioData: PortfolioData = {
             date: '2026',
             category: 'certification',
             credentialUrl: 'https://www.toptal.com',
-            image: '/certificates/vishnu-cert-4.jpg'
         },
         {
             id: 'microsoft-ai',
@@ -259,7 +255,6 @@ export const portfolioData: PortfolioData = {
             date: '2025',
             category: 'certification',
             credentialUrl: 'https://microsoft.com',
-            image: '/certificates/vishnu-cert-5.jpg'
         },
         {
             id: 'cybersecurity-vapt',
@@ -268,7 +263,6 @@ export const portfolioData: PortfolioData = {
             date: '2024',
             category: 'certification',
             credentialUrl: 'https://iiita.ac.in',
-            image: '/certificates/vishnu-cert-6.jpg'
         }
     ],
     techStack: [],
