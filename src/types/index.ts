@@ -24,6 +24,8 @@ export interface Project {
     team?: string;
     customTimeline?: string;
     role?: string;
+    thumbnail?: string;
+    year?: number;
 }
 
 export interface Experience {
@@ -45,6 +47,7 @@ export interface Experience {
     externalLink?: string | string[];
     keyLearnings?: string[];
     impact?: string[];
+    companyUrl?: string;
 }
 
 export interface Education {
@@ -129,6 +132,7 @@ export interface PersonalInfo {
     phone?: string;
     website?: string;
     resumeUrl?: string;
+    calLink?: string;
     languages?: Language[];
     socialLinks: SocialLink[];
 }

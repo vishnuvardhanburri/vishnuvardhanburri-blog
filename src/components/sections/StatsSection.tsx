@@ -25,22 +25,19 @@ export default function StatsSection({ scrollYProgress, showOnly }: { scrollYPro
     const visibleCount = 3;
 
     useEffect(() => {
-        const galleryImages = [
-            { src: '/gallery/Foto Utama.webp', alt: 'Foto Utama' },
-            { src: '/gallery/FotoSC1.webp', alt: 'Foto SC1' },
-            { src: '/gallery/FotoSC2.webp', alt: 'Foto SC2' },
-            { src: '/gallery/FotoSC3.webp', alt: 'Foto SC3' },
-            { src: '/gallery/FotoSC4.webp', alt: 'Foto SC4' },
-            { src: '/gallery/FotoSC5.webp', alt: 'Foto SC5' },
-            { src: '/gallery/academicaffairsdivision1.webp', alt: 'Academic Affairs' },
-            { src: '/gallery/computernetworkpracticumassistant2.webp', alt: 'Computer Network' },
-            { src: '/gallery/dataentryassistant1.webp', alt: 'Data Entry' },
-            { src: '/gallery/delegateaiesecfutureleaders20241.webp', alt: 'AIESEC' },
-            { src: '/gallery/environmentalhygieneteam1.webp', alt: 'Hygiene Team 1' },
-            { src: '/gallery/environmentalhygieneteam2.webp', alt: 'Hygiene Team 2' },
-            { src: '/gallery/logisticsoperatorcampusexpo20242.webp', alt: 'Logistics' },
-            { src: '/gallery/researchassistant1.webp', alt: 'Research Assistant 1' },
-            { src: '/gallery/researchassistant2.webp', alt: 'Research Assistant 2' },
+                                const galleryImages = [
+            { src: '/gallery/vishnu-speaking.jpg', alt: 'Vishnu Speaking at Event' },
+            { src: '/gallery/vishnu-toptal.jpg', alt: 'Vishnu Toptal Award' },
+            { src: '/gallery/vishnu-gallery-1.jpg', alt: 'Vishnu Vardhan Burri - Security Engineer' },
+            { src: '/gallery/vishnu-gallery-2.jpg', alt: 'Vishnu Vardhan Burri' },
+            { src: '/certificates/vishnu-cert-1.jpg', alt: 'Certification 1' },
+            { src: '/certificates/vishnu-cert-2.jpg', alt: 'Certification 2' },
+            { src: '/certificates/vishnu-cert-3.jpg', alt: 'Certification 3' },
+            { src: '/certificates/vishnu-cert-4.jpg', alt: 'Certification 4' },
+            { src: '/certificates/vishnu-cert-5.jpg', alt: 'Certification 5' },
+            { src: '/certificates/vishnu-cert-6.jpg', alt: 'Certification 6' },
+            { src: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop', alt: 'Cybersecurity' },
+            { src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop', alt: 'Server Infrastructure' }
         ];
         // Shuffle images randomly
         const shuffledImages = [...galleryImages].sort(() => 0.5 - Math.random());
@@ -60,6 +57,7 @@ export default function StatsSection({ scrollYProgress, showOnly }: { scrollYPro
 
     // Helper to get visible blogs in an infinite way
     const getVisibleBlogs = () => {
+        if (blogs.length === 0) return [];
         const result = [];
         for (let i = 0; i < visibleCount; i++) {
             result.push(blogs[(currentIndex + i) % blogs.length]);

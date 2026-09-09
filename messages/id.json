@@ -35,8 +35,8 @@
         }
     },
     "hero": {
-        "greeting": "Selamat datang di ruang digital saya",
-        "subtitle": "Full Stack Developer • AI Engineer • Data Scientist",
+        "greeting": "XAVIRA Technologies / Infrastructure Architect",
+        "subtitle": "Security Software Engineer • Backend SDE",
         "cta": {
             "primary": "Jelajahi Proyek",
             "secondary": "Hubungi Saya",
@@ -45,7 +45,7 @@
         "badge": "Terbuka untuk peluang",
         "scroll": "Gulir ke Bawah",
         "role": "Software Engineer",
-        "description": "Membangun sistem cerdas di persimpangan <span class='text-primary font-semibold'>AI</span>, <span class='text-secondary font-semibold'>Rekayasa</span>, dan <span class='text-accent font-semibold'>Arsitektur Skalabel</span>."
+        "description": "I engineer high-throughput backend infrastructure, cryptographic verification engines, and zero-trust security layers for production environments."
     },
     "about": {
         "title": "Tentang Saya",
@@ -70,8 +70,8 @@
             "scope": "Berfokus pada model prediktif, pemrosesan data yang dioptimalkan, dan pipeline RAG yang dirancang untuk lingkungan produksi dan performa terukur.",
             "bridging": "Menghubungkan lab dan sistem langsung.",
             "integration": "Selain model, saya merancang ekosistem full-stack: backend yang aman, arsitektur data yang kuat, dan pipeline yang skalabel.",
-            "signature": "Azril",
-            "role": "AI, Data & Software Engineer",
+            "signature": "Vishnu",
+            "role": "Security Software Engineer",
             "aboutMe": "Tentang Saya",
             "scroll": "Scroll untuk Jelajah",
             "shortStory": "Cerita Singkat Saya"
@@ -335,24 +335,28 @@
         },
         "faqData": [
             {
-                "q": "Apa bidang keahlian utama Anda?",
-                "a": "Sebagai mahasiswa Teknologi Informasi di Telkom University dan Asisten Peneliti di Laboratorium Cyber Physical System, saya berspesialisasi dalam persimpangan Kecerdasan Buatan (Computer Vision & Deep Learning), Full-stack Development (Next.js & Node.js), dan teknologi Blockchain/Web3 yang sedang berkembang."
+                "q": "Apa itu XAVIRA Technologies?",
+                "a": "XAVIRA Technologies adalah perusahaan Engineering Intelligence & Systems Architecture yang saya dirikan dan pimpin sebagai CEO & Principal Architect. Kami memberikan distributed systems, audit teknis independen, dan arsitektur API berperforma tinggi untuk startup. Kunjungi xaviratechlabs.com."
             },
             {
-                "q": "Apakah Anda tersedia untuk kolaborasi riset atau freelance?",
-                "a": "Tentu saja. Saat ini saya aktif dalam riset AI di CPS Lab dan Pusat Riset HUMIC, tetapi saya selalu terbuka untuk proyek freelance inovatif, magang, atau kolaborasi teknis yang menjembatani inovasi dengan eksekusi strategis."
+                "q": "Apa keahlian utama Anda?",
+                "a": "Saya mengkhususkan diri dalam rekayasa sistem backend, keamanan siber, dan infrastruktur produksi AI. Sebagai insinyur yang diverifikasi Toptal Top 3% dan mahasiswa Keamanan Siber CSE di The Apollo University (IPK 9.59/10)."
             },
             {
-                "q": "Apa tech stack tipikal Anda untuk produksi?",
-                "a": "Untuk proyek AI, saya menggunakan Python dengan TensorFlow, PyTorch, dan YOLO. Untuk aplikasi web, andalan saya adalah stack T3: Next.js, TypeScript, dan Tailwind CSS, sering kali diintegrasikan dengan Agen AI atau Smart Contracts jika sesuai."
+                "q": "Apakah Anda tersedia untuk proyek freelance?",
+                "a": "Ya — saya terbuka untuk proyek freelance berdampak tinggi dan konsultasi teknis. Anda dapat memesan panggilan 15 menit di cal.com/vishnuvardhanburri/15min."
             },
             {
-                "q": "Apakah Anda memiliki pengalaman dengan proyek enterprise atau lab?",
-                "a": "Ya, saya pernah menjabat sebagai System Analyst dan Pengembang AI di berbagai lingkungan berbasis riset. Saya telah merancang mulai dari platform AIoT dan sistem deteksi serangan hingga modul praktikum siswa untuk audiens global."
+                "q": "Apa tech stack produksi Anda?",
+                "a": "Untuk sistem backend: Python, Rust, Java, Node.js, dan PostgreSQL/MongoDB. Untuk AI/ML: TensorFlow, PyTorch, dan LangChain. Deployment menggunakan Docker di Azure atau Render."
             },
             {
-                "q": "Bagaimana cara memulai kemitraan atau proyek?",
-                "a": "Cara paling efisien adalah menggunakan formulir kontak di atas atau menghubungi langsung melalui email di azril4974@gmail.com. Saya biasanya dapat merespons dalam waktu 24 jam untuk mendiskusikan bagaimana keterampilan teknis saya dapat memberikan nilai tambah bagi inisiatif Anda."
+                "q": "Bagaimana cara memulai kerja sama?",
+                "a": "Cara tercepat adalah memesan panggilan langsung di cal.com/vishnuvardhanburri/15min atau gunakan formulir kontak di atas. Saya biasanya merespons dalam 24 jam."
+            },
+            {
+                "q": "Apakah Anda bekerja dengan startup?",
+                "a": "Tentu saja. XAVIRA Technologies secara khusus fokus membantu startup yang didukung modal ventura untuk menstabilkan dan menskalakan arsitektur backend mereka."
             }
         ]
     },
@@ -416,7 +420,7 @@
             "creative": "Kreatif"
         },
         "ribbon1": "Next.js • React • Python • PyTorch • Pandas • TypeScript • Node.js • Scikit-Learn • TensorFlow • SQL",
-        "ribbon2": "Software Engineer • AI Engineer • Data Scientist • Data Analyst • Machine Learning Engineer • Backend Developer • Full Stack Engineer • NLP Engineer • Data Engineer • Web Developer"
+        "ribbon2": "Software Engineer • Security Engineer • Data Scientist • Data Analyst • Machine Learning Engineer • Backend Developer • Full Stack Engineer • NLP Engineer • Data Engineer • Web Developer"
     },
     "common": {
         "loading": "Memuat...",

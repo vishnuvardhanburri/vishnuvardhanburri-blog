@@ -41,7 +41,7 @@ const highlightContent = {
     education: {
         title: "Building the Future",
         highlight: "Through Knowledge",
-        description: "Every line of code starts with understanding. My academic journey at Telkom University shapes how I approach complex problems with systematic thinking."
+        description: "Every line of code starts with understanding. My academic journey at The Apollo University shapes how I approach complex problems with systematic thinking."
     },
     journey: {
         title: "Crafting Experiences",
@@ -99,7 +99,7 @@ function ExperienceTabSlider({ isLowPowerMode }: { isLowPowerMode: boolean }) {
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
     const tabs: TabItem[] = [
-        { id: 'education', label: 'Education', description: 'Building strong foundations through academic excellence at Telkom University and SMAN 88 Jakarta.' },
+        { id: 'education', label: 'Education', description: 'Building strong foundations through academic excellence at The Apollo University and Pre-University Education.' },
         { id: 'journey', label: 'Journey', description: 'A timeline of roles, responsibilities, and professional growth across various organizations.' },
         { id: 'experience', label: 'Experience', description: 'Detailed breakdown of work experiences with project highlights and achievements.' },
     ];

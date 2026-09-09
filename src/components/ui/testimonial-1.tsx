@@ -35,9 +35,9 @@ export default function Testimonial1() {
 
   const stats: StatItem[] = [
     {
-      value: 3.62,
+      value: 9.59,
       decimals: 2,
-      suffix: "/4.0",
+      suffix: "/10",
       label: "Current GPA",
       href: "/resume",
       cta: "View Resume",
@@ -51,9 +51,9 @@ export default function Testimonial1() {
       cta: "View Projects",
     },
     {
-      value: 2,
+      value: 4,
       decimals: 0,
-      suffix: " Years",
+      suffix: "+ Years",
       label: "Professional Exp",
       href: "/experience",
       cta: "Explore Career",
@@ -96,9 +96,9 @@ export default function Testimonial1() {
         {/* Main Heading with Refined Block Reveal Animation */}
         <div className="text-center max-w-5xl mx-auto relative text-neutral-900 dark:text-white px-4 space-y-1 md:space-y-2">
           {[
-            { text: "Data that speaks. AI that reasons.", color: "#6366f1", delay: 0 },
-            { text: "Software that ships.", color: "#10b981", delay: 0.15 },
-            { text: "Three disciplines, one engineer", color: "#f59e0b", delay: 0.3 },
+            { text: "High-scale backend architecture. Deep cryptographic verification.", color: "#6366f1", delay: 0 },
+            { text: "Infrastructure that scales.", color: "#10b981", delay: 0.15 },
+            { text: "One engineer, tier-one infrastructure", color: "#f59e0b", delay: 0.3 },
             { text: "and the numbers behind the work.", color: "#ef4444", delay: 0.45 }
           ].map((line, i) => (
             <div key={i} className="relative block overflow-hidden py-1.5">

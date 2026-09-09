@@ -530,7 +530,6 @@ html, body, * {
   }
 }
 
-@theme inline {
   @keyframes marquee-left {
   from {
     transform: translateX(0);
@@ -547,7 +546,6 @@ html, body, * {
     transform: translateX(0);
     }
   }
-}
 
 /* Bulletproof Native Compositor Arc Animations - Bypassing JS Main Thread Ghosting */
 @keyframes arc-spin {

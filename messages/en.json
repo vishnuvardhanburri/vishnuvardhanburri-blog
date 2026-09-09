@@ -35,8 +35,8 @@
         }
     },
     "hero": {
-        "greeting": "Welcome to my digital space",
-        "subtitle": "Full Stack Developer • AI Engineer • Data Scientist",
+        "greeting": "XAVIRA Technologies / Infrastructure Architect",
+        "subtitle": "Security Software Engineer • Backend SDE",
         "cta": {
             "primary": "Explore Projects",
             "secondary": "Get in Touch",
@@ -45,7 +45,7 @@
         "badge": "Available for opportunities",
         "scroll": "Scroll Down",
         "role": "Software Engineer",
-        "description": "Building intelligent systems at the intersection of <span class='text-primary font-semibold'>AI</span>, <span class='text-secondary font-semibold'>Engineering</span>, and <span class='text-accent font-semibold'>Scalable Architecture</span>."
+        "description": "I engineer high-throughput backend infrastructure, cryptographic verification engines, and zero-trust security layers for production environments."
     },
     "about": {
         "title": "About Me",
@@ -63,15 +63,15 @@
         "leadIn": {
             "label": "WHAT I DO",
             "tagline": "CORE FOCUS",
-            "headlineAI": "Applied AI.",
-            "headlineData": "Scalable Data.",
+            "headlineAI": "High-Scale Architecture.",
+            "headlineData": "Deep Cryptography.",
             "headlineSoftware": "Robust software engineering",
             "thesis": "I build intelligent systems and the <span class='text-primary italic font-serif-elegant font-normal'>data infrastructure</span> that makes them reliable at scale.",
             "scope": "Focusing on predictive models, optimized data processing, and RAG pipelines designed for production environments and measurable performance.",
             "bridging": "Bridging labs and live systems.",
             "integration": "Beyond models, I architect full-stack ecosystems: secure backends, robust data architectures, and scalable pipelines.",
-            "signature": "Azril",
-            "role": "AI, Data & Software Engineer",
+            "signature": "Vishnu",
+            "role": "Security Software Engineer",
             "aboutMe": "About Me",
             "scroll": "Scroll to Explore",
             "shortStory": "My Short Story"
@@ -101,7 +101,7 @@
         "profile": {
             "title": "Architecting Scalable Systems <br /> Where Intelligence Meets Engineering.",
             "narrativeLabel": "Core Narrative",
-            "narrative": "As an Information Technology student specializing in Artificial Intelligence and Software Engineering, I focus on building systems that bridge research foundations with production-ready implementation.",
+            "narrative": "As a CSE Cybersecurity student at The Apollo University, I focus on building systems that bridge research foundations with production-ready implementation.",
             "narrative2": "My work combines algorithmic thinking, backend engineering, and scalable architecture to deliver solutions that are intelligent, reliable, and built for real-world impact.",
             "pillars": {
                 "reliable": {
@@ -350,24 +350,28 @@
         },
         "faqData": [
             {
-                "q": "What is your main area of expertise?",
-                "a": "As an Information Technology student at Telkom University and a Research Assistant at the Cyber Physical System Laboratory, I specialize in the intersection of Artificial Intelligence (Computer Vision & Deep Learning), Full-stack Development (Next.js & Node.js), and emerging Blockchain/Web3 technologies."
+                "q": "What is XAVIRA Technologies and what do you do there?",
+                "a": "XAVIRA Technologies is a premier Engineering Intelligence & Systems Architecture firm I founded and lead as CEO & Principal Architect. We deliver production-grade distributed systems, independent technical audits, high-performance API architecture, and database scaling for venture-backed startups. Visit xaviratechlabs.com to learn more."
             },
             {
-                "q": "Are you available for research or freelance collaborations?",
-                "a": "Absolutely. I am currently active in AI research at the CPS Lab and HUMIC Research Center, but I'm always open to innovative freelance projects, internships, or technical collaborations that bridge innovation with strategic execution."
+                "q": "What is your core area of expertise?",
+                "a": "I specialise in the intersection of backend systems engineering, cybersecurity, and production-AI infrastructure. As a Toptal Top 3% verified engineer and CSE Cybersecurity student at The Apollo University (GPA 9.59/10), I architect systems that are intelligent, secure, and built for real-world scale."
             },
             {
-                "q": "What is your typical tech stack for production?",
-                "a": "For AI projects, I primarily use Python with TensorFlow, PyTorch, and YOLO. For web applications, my go-to is the T3-style stack: Next.js, TypeScript, and Tailwind CSS, often integrated with AI Agents or Smart Contracts where appropriate."
+                "q": "Are you available for freelance or consulting work?",
+                "a": "Yes — I'm open to high-impact freelance projects, technical consulting, and strategic collaborations in backend systems, AI infrastructure, and security engineering. You can book a 15-minute intro call directly at cal.com/vishnuvardhanburri/15min."
             },
             {
-                "q": "Do you have experience with enterprise or lab projects?",
-                "a": "Yes, I've served as a System Analyst and AI Developer in various research-driven environments. I've architected everything from AIoT platforms and attack detection systems to student practicum modules for global audiences."
+                "q": "What is your production tech stack?",
+                "a": "For backend systems I use Python, Rust, Java, Node.js, and PostgreSQL/MongoDB. For AI/ML pipelines: TensorFlow, PyTorch, and LangChain. Security tooling includes my own PyWAF and Sovereign-Shield frameworks. Deployments are containerised with Docker on Azure or Render."
             },
             {
-                "q": "How can we start a partnership or project?",
-                "a": "The most efficient way is to use the contact form above or reach out directly via email at azril4974@gmail.com. I'm usually able to respond within 24 hours to discuss how my technical skill set can add value to your initiatives."
+                "q": "How quickly can we start working together?",
+                "a": "The fastest way is to book a direct 15-min call at cal.com/vishnuvardhanburri/15min or use the contact form above. I typically respond within 24 hours. For enterprise engagements through XAVIRA Technologies, visit xaviratechlabs.com."
+            },
+            {
+                "q": "Do you work with startups and venture-backed companies?",
+                "a": "Absolutely. XAVIRA Technologies specifically focuses on helping venture-backed startups stabilise and scale their backend architecture. I've worked with clients across London, the US, and India — designing systems that handle high-throughput production workloads reliably."
             }
         ]
     },
@@ -407,7 +411,7 @@
             "creative": "Creative"
         },
         "ribbon1": "Next.js • React • Python • PyTorch • Pandas • TypeScript • Node.js • Scikit-Learn • TensorFlow • SQL",
-        "ribbon2": "Software Engineer • AI Engineer • Data Scientist • Data Analyst • Machine Learning Engineer • Backend Developer • Full Stack Engineer • NLP Engineer • Data Engineer • Web Developer"
+        "ribbon2": "Software Engineer • Security Engineer • Data Scientist • Data Analyst • Machine Learning Engineer • Backend Developer • Full Stack Engineer • NLP Engineer • Data Engineer • Web Developer"
     },
     "stats": {
         "systemStatus": "System Status: Analytics Active",

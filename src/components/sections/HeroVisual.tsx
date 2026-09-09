@@ -142,8 +142,8 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
         />
       </div>
 
-      <main className="relative flex-1 flex flex-col justify-center pt-40 pb-20 z-10 max-w-[105rem] w-full mx-auto">
-        <div className="flex relative gap-4 px-6 md:items-center w-full flex-col justify-center">
+      <main className="relative flex-1 flex flex-col justify-center pt-52 pb-28 z-10 max-w-[105rem] w-full mx-auto">
+        <div className="flex relative gap-8 px-8 md:items-center w-full flex-col justify-center">
 
           {/* Follow-Cursor Tooltip */}
           <AnimatePresence>
@@ -169,7 +169,7 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
           </AnimatePresence>
 
           {/* Line 1: AI & DATA */}
-          <div className="md:flex gap-8 items-center relative">
+          <div className="md:flex gap-8 items-center relative py-3">
             <motion.p
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -192,7 +192,7 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isExiting ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[clamp(3rem,11vw,13rem)] font-black leading-[0.85] tracking-tighter text-shiny will-change-transform px-4"
+                className="text-[clamp(1.5rem,4vw,6rem)] font-black leading-[0.85] tracking-tighter text-shiny will-change-transform px-4"
               >
                 AI & DATA
               </motion.h1>
@@ -200,7 +200,7 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
           </div>
 
           {/* Line 2: SOFT [ICON] WARE */}
-          <div className="md:flex gap-8 items-center relative">
+          <div className="md:flex gap-8 items-center relative py-3">
             <div className="relative">
               <div ref={linkedinRef} className="absolute -top-8 left-4 text-primary/60 hover:text-primary z-20 opacity-0">
                 <a
@@ -224,13 +224,13 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isExiting ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[clamp(3rem,11vw,13rem)] md:flex items-center font-black leading-[0.85] tracking-tighter text-shiny will-change-transform px-4"
+                className="text-[clamp(1.5rem,4vw,6rem)] md:flex items-center font-black leading-[0.85] tracking-tighter text-shiny will-change-transform px-4"
               >
                 <span className="">SOFT</span>
                 <div
                   ref={zapRef}
                   className="hidden lg:block mx-[0.05em] relative cursor-pointer group"
-                  onClick={() => window.open('https://arfazrllworkspace.vercel.app/', '_blank')}
+                  onClick={() => window.open('https://vishnuvardhanburriworkspace.vercel.app/', '_blank')}
                   onMouseEnter={(e) => setTooltip({ show: true, text: "Go to Workspace", icon: 'zap', x: e.clientX, y: e.clientY })}
                   onMouseMove={(e) => setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))}
                   onMouseLeave={() => setTooltip(prev => ({ ...prev, show: false }))}
@@ -240,7 +240,7 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
                 <div
                   ref={zapSmallRef}
                   className="block lg:hidden mx-[0.02em] relative cursor-pointer group"
-                  onClick={() => window.open('https://arfazrllworkspace.vercel.app/', '_blank')}
+                  onClick={() => window.open('https://vishnuvardhanburriworkspace.vercel.app/', '_blank')}
                   onMouseEnter={(e) => setTooltip({ show: true, text: "Go to Workspace", icon: 'zap', x: e.clientX, y: e.clientY })}
                   onMouseMove={(e) => setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))}
                   onMouseLeave={() => setTooltip(prev => ({ ...prev, show: false }))}
@@ -253,12 +253,12 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
           </div>
 
           {/* Line 3: EN [ICON] GINEER */}
-          <div className="md:flex gap-8 items-center relative">
+          <div className="md:flex gap-8 items-center relative py-3">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={isExiting ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[clamp(3rem,11vw,13rem)] md:flex items-center font-black leading-[0.85] tracking-tighter text-shiny will-change-transform px-4"
+              className="text-[clamp(1.5rem,4vw,6rem)] md:flex items-center font-black leading-[0.85] tracking-tighter text-shiny will-change-transform px-4"
             >
               <span className="">EN</span>
               <div
@@ -295,7 +295,7 @@ export function HeroVisual({ isExiting = false }: { isExiting?: boolean }) {
           <div className="flex items-center gap-6">
             <Separator className="flex-1 h-[1px] bg-foreground/10 hidden md:block" />
             <div className="text-[10px] md:text-xs whitespace-nowrap font-bold tracking-[0.3em] text-muted-foreground uppercase">
-              JAKARTA, ID — 2026
+              LONDON, UK — 2026
             </div>
             <Link
               href="/resume"

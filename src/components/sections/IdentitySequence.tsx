@@ -230,7 +230,7 @@ export const IdentitySequence = ({ scrollYProgress, isVisible }: IdentitySequenc
                                                 style={{ y: imageParallaxY }}
                                             >
                                                 <Image
-                                                    src={portfolioData.personal.avatar}
+                                                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
                                                     alt="Profile"
                                                     fill
                                                     className="object-cover object-bottom grayscale-0"

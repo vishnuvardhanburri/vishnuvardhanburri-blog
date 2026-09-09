@@ -89,7 +89,7 @@ const CenterImage = ({ scrollY }: { scrollY: MotionValue<number> }) => {
                     borderRadius,
                     opacity,
                     backgroundImage:
-                        "url('/experience/Foto Utama.webp')",
+                        "url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop')",
                     backgroundPosition: "center",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",

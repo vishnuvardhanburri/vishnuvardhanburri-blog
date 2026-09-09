@@ -104,7 +104,7 @@ export function Footer() {
                 hour: 'numeric',
                 minute: '2-digit',
                 hour12: true,
-                timeZone: 'Asia/Jakarta'
+                timeZone: 'Europe/London'
             };
             const timeString = new Intl.DateTimeFormat('en-US', options).format(now);
             // Jakarta is UTC+7
@@ -222,7 +222,7 @@ export function Footer() {
                                             <Fragment key={social.platform}>
                                                 {social.platform === 'Twitter' && (
                                                     <motion.a
-                                                        href="https://arfazrllworkspace.vercel.app/"
+                                                        href="https://vishnuvardhanburriworkspace.vercel.app/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="p-1.5 rounded-full hover:bg-foreground/5 transition-all text-muted-foreground hover:text-foreground hover:scale-110 active:scale-95"
@@ -386,12 +386,12 @@ export function Footer() {
                                                 {localTime}
                                             </p>
                                             <a
-                                                href="https://www.google.com/maps/place/Jakarta,+Indonesia"
+                                                href="https://www.google.com/maps/place/London,+UK"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-zinc-900 dark:text-white text-[1.2vw] min-text-[14px] font-medium tracking-tight hover:text-zinc-500 dark:hover:text-zinc-400 transition-colors inline-block"
                                             >
-                                                Jakarta, Indonesia
+                                                London, UK
                                             </a>
                                         </FooterColumn>
 
@@ -411,7 +411,7 @@ export function Footer() {
                                         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                                         className="text-[18vw] font-black leading-none text-zinc-900 dark:text-white tracking-tighter select-none text-center"
                                     >
-                                        ARFAZRLL
+                                        vishnuvardhanburri
                                     </motion.h2>
                                 </div>
                             </div>

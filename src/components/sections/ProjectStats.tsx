@@ -8,21 +8,19 @@ import { Counter } from '@/components/ui/Counter';
 // Calculate metrics from portfolio data
 const calculateMetrics = () => {
     const totalProjects = portfolioData.projects?.length || 0;
-    const completedProjects = portfolioData.projects?.filter(p => p.status === 'completed').length || 0;
-    const totalTechStack = portfolioData.techStack?.length || 0;
-    const totalTools = portfolioData.tools?.length || 0;
 
-    // Calculate years of experience (assuming earliest project start date)
-    const yearsExp = 2; // Hardcoded based on resume/experience
+    // Real tech count: Python, Rust, Java, JS/TS, Docker, MongoDB, PostgreSQL, Azure, Flask, TensorFlow, PyTorch, LangChain, Linux, React, Next.js
+    const realTechCount = 15;
+
+    // 4+ years of experience (2022-2026)
+    const yearsExp = 4;
 
     return {
         projects: totalProjects,
-        completed: completedProjects,
-        techCount: totalTechStack + totalTools,
+        techCount: realTechCount,
         yearsExp,
-        // Creative metrics
-        impactScore: '12+', // GitHub stars, downloads, or impact metric
-        satisfaction: '98%'   // Client/user satisfaction rate
+        impactScore: '8+',   // Active deployments / live projects
+        openssf: '3'          // OpenSSF GOLD certified repos
     };
 };
 

@@ -82,7 +82,7 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: [
-					'var(--font-inter)',
+					'var(--font-inter)', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 					'system-ui',
 					'sans-serif'
 				],
