@@ -28,7 +28,6 @@ import { HorizontalTimeline } from "@/components/ui/horizontal-timeline";
 import { CertificateShowcase } from "@/components/ui/certificate-marquee";
 import { GitHubShowcase } from "@/components/ui/github-showcase";
 import KaggleShowcase from "@/components/ui/kaggle-showcase";
-import { WakaTimeShowcase } from "@/components/ui/wakatime-showcase";
 import { ShowcaseStack } from "@/components/ui/showcase-stack";
 
 const showcaseMembers = [
@@ -698,9 +697,6 @@ export default function AboutSection() {
                             </div>
                             <div className="w-full">
                                 <KaggleShowcase />
-                            </div>
-                            <div className="w-full">
-                                <WakaTimeShowcase />
                             </div>
                         </ShowcaseStack>
                     </div>
