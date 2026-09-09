@@ -97,6 +97,54 @@ export default async function RootLayout({
 }: {
     children: React.ReactNode;
 }) {
+    
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://www.vishnuvardhanburri.in/#person",
+                "name": "Vishnu Vardhan Burri",
+                "url": "https://www.vishnuvardhanburri.in",
+                "image": "https://www.vishnuvardhanburri.in/gallery/vishnu-me.jpg",
+                "jobTitle": ["Founder & CEO", "Director", "Principal Architect", "Toptal Top 3% SDE/ML Engineer"],
+                "worksFor": [
+                    {
+                        "@type": "Organization",
+                        "name": "XAVIRA Technologies",
+                        "url": "https://xaviratechlabs.com"
+                    },
+                    {
+                        "@type": "Organization",
+                        "name": "Toptal",
+                        "url": "https://www.toptal.com"
+                    }
+                ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "The Apollo University"
+                },
+                "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Cybersecurity", "Distributed Systems", "Cloud Architecture", "Zero-Knowledge Proofs", "Rust", "Python"],
+                "sameAs": [
+                    "https://www.linkedin.com/in/vishnuvardhanburri/",
+                    "https://github.com/vishnuvardhanburri",
+                    "https://orcid.org/0009-0004-7513-0528",
+                    "https://xaviratechlabs.com"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://www.vishnuvardhanburri.in/#website",
+                "url": "https://www.vishnuvardhanburri.in",
+                "name": "Vishnu Vardhan Burri - CEO & Principal Architect",
+                "description": "Founder & CEO at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.",
+                "publisher": {
+                    "@id": "https://www.vishnuvardhanburri.in/#person"
+                }
+            }
+        ]
+    };
+
     const locale = await getLocale();
     const messages = await getMessages();
 
