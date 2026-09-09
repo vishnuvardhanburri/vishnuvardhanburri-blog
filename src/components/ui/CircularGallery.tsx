@@ -602,7 +602,7 @@ export function CircularGallery({
                     {items.map((item, i) => (
                         <div key={i} className="flex-shrink-0 w-[280px]">
                             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 shadow-xl">
-                                <img src={item.image} alt={item.text} className="w-full h-full object-cover" />
+                                <img loading="lazy" decoding="async" src={item.image} alt={item.text} className="w-full h-full object-cover" />
                                 <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black via-black/40 to-transparent">
                                     <p className="text-white font-bold text-lg leading-tight">{item.text}</p>
                                 </div>

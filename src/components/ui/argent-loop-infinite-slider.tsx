@@ -271,7 +271,7 @@ export function ArgentLoopInfiniteSlider() {
                   <motion.div style={{ y: contentInternalY }} className="w-full h-full relative">
                     {PROJECT_DATA.map((data, i) => (
                       <div key={i} className="minimap-img-item" style={{ top: `${i * 250}px` }}>
-                        <img src={data.image} alt={data.title} className="block w-full h-full object-cover" />
+                        <img loading="lazy" decoding="async" src={data.image} alt={data.title} className="block w-full h-full object-cover" />
                       </div>
                     ))}
                   </motion.div>

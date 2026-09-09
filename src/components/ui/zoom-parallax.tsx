@@ -51,7 +51,7 @@ export function ZoomParallax({ images, children }: ZoomParallaxProps) {
 							<div className="relative h-[25vh] w-[25vw] rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-muted/20 flex items-center justify-center pointer-events-auto">
 								{index === 0 && children ? (
 									<div className="relative h-full w-full flex flex-col items-center justify-center overflow-hidden group">
-										<img
+										<img loading="lazy" decoding="async"
 											src={src || '/placeholder.svg'}
 											alt={alt || `Parallax image ${index + 1}`}
 											className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -63,7 +63,7 @@ export function ZoomParallax({ images, children }: ZoomParallaxProps) {
 										</div>
 									</div>
 								) : (
-									<img
+									<img loading="lazy" decoding="async"
 										src={src || '/placeholder.svg'}
 										alt={alt || `Parallax image ${index + 1}`}
 										className="h-full w-full object-cover"

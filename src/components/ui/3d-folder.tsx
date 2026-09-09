@@ -168,7 +168,7 @@ export const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           top: "-72px",
         }}
       >
-        <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
+        <img loading="lazy" decoding="async" src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
         <p className="absolute bottom-1.5 left-1.5 right-1.5 text-[10px] font-medium text-primary-foreground truncate text-center">
           {title}

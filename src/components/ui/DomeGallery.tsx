@@ -719,7 +719,7 @@ export const DomeGallery: React.FC<DomeGalleryProps> = ({
                                         WebkitTransform: 'translateZ(0)'
                                     }}
                                 >
-                                    <img
+                                    <img loading="lazy" decoding="async"
                                         src={item.src}
                                         draggable={false}
                                         alt={item.alt}

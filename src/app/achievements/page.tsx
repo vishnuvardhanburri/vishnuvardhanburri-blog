@@ -482,7 +482,7 @@ const AchievementModal = React.forwardRef<HTMLDivElement, {
                                         />
                                     </div>
                                 ) : (
-                                    <img
+                                    <img loading="lazy" decoding="async"
                                         src={achievement.image}
                                         alt={achievement.title}
                                         className="w-full h-auto max-h-[55vh] object-contain rounded-lg shadow-xl border border-border/20"

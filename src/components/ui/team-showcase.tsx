@@ -274,7 +274,7 @@ function PhotoCard({
             onMouseLeave={() => onHover(null)}
             onClick={onClick}
         >
-            <img
+            <img loading="lazy" decoding="async"
                 src={member.image}
                 alt={member.name}
                 className="w-full h-full object-cover transition-all duration-700 bg-muted/20"

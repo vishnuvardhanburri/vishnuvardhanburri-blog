@@ -104,7 +104,7 @@ const Card = ({ card }: { card: typeof allCards[0] }) => {
       <div className="absolute bottom-0 right-0 w-3 h-3 sm:w-4 sm:h-4 border-b-[2px] border-r-[2px] border-blue-600 dark:border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-300 z-30 transform translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0" />
 
       <div className="absolute inset-0 z-0 flex items-center justify-center p-6 sm:p-8 transition-transform duration-700 group-hover:scale-[1.03] opacity-60 group-hover:opacity-100">
-        <img
+        <img loading="lazy" decoding="async"
           src={card.url}
           alt={card.title}
           className="w-full h-full object-contain dark:invert-0 invert"

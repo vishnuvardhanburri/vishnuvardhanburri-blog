@@ -125,7 +125,7 @@ export default function FeatureSection() {
                               />
                             ) : (
                               // eslint-disable-next-line @next/next/no-img-element
-                              <img
+                              <img loading="lazy" decoding="async"
                                 src={cfg.img}
                                 alt="icon"
                                 className="w-5 h-5 md:w-7 md:h-7 object-cover rounded-full"

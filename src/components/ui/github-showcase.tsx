@@ -491,7 +491,7 @@ export const GitHubShowcase = () => {
                               { id: "quickdraw", x: 1 }, { id: "yolo", x: 1 }
                             ].map((badge, i) => (
                               <motion.div key={i} whileHover={{ scale: 1.3, rotate: -10 }} className="relative flex justify-center w-full">
-                                <img src={`https://github.githubassets.com/images/modules/profile/achievements/${badge.id}-default.png`} alt={badge.id} className="w-16 h-16" />
+                                <img loading="lazy" decoding="async" src={`https://github.githubassets.com/images/modules/profile/achievements/${badge.id}-default.png`} alt={badge.id} className="w-16 h-16" />
                               </motion.div>
                             ))}
                           </div>

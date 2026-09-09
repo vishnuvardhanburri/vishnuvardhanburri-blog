@@ -101,7 +101,7 @@ const MarqueeLogoScroller = React.forwardRef<HTMLDivElement, MarqueeLogoScroller
                 <div className="absolute inset-0 bg-black/5 dark:bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
 
                 {/* Photo Image */}
-                <img
+                <img loading="lazy" decoding="async"
                   src={logo.src}
                   alt={logo.alt}
                   className="relative h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
