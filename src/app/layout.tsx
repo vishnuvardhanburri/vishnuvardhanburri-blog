@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     keywords: ['developer', 'portfolio', 'web development', 'full stack', 'react', 'nextjs'],
     authors: [{ name: 'Vishnu Vardhan Burri' }],
     creator: 'Vishnu Vardhan Burri',
-    metadataBase: new URL('https://your-domain.com'),
+    metadataBase: new URL('https://www.vishnuvardhanburri.in'),
     openGraph: {
         type: 'website',
         locale: 'en_US',
