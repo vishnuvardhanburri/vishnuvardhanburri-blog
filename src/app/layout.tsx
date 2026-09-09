@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         default: 'Vishnu Vardhan Burri | Principal Architect & CEO',
         template: '%s | Vishnu Vardhan Burri',
     },
-    description: 'Founder Founder & CEO Chief Executive Officer at XAVIRA Technologies | Toptal Top 3% SDE/ML Engineer | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
+    description: 'Founder & Chief Executive Officer at XAVIRA Technologies | Toptal Top 3% SDE/ML Engineer | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
     keywords: ['Vishnu Vardhan Burri', 'XAVIRA Technologies', 'Principal Architect', 'Machine Learning Engineer', 'Cybersecurity', 'Toptal SDE', 'London', 'Software Engineer'],
     authors: [{ name: 'Vishnu Vardhan Burri', url: 'https://www.vishnuvardhanburri.in' }],
     creator: 'Vishnu Vardhan Burri',
@@ -46,18 +46,24 @@ export const metadata: Metadata = {
             'en-US': '/en',
         },
     },
+
+    icons: {
+        icon: 'https://github.com/vishnuvardhanburri.png',
+        shortcut: 'https://github.com/vishnuvardhanburri.png',
+        apple: 'https://github.com/vishnuvardhanburri.png',
+    },
     openGraph: {
         type: 'website',
         locale: 'en_US',
         url: 'https://www.vishnuvardhanburri.in',
         title: 'Vishnu Vardhan Burri | Principal Architect',
-        description: 'Founder Founder & CEO Chief Executive Officer at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
+        description: 'Founder & Chief Executive Officer at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
         siteName: 'Vishnu Vardhan Burri',
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Vishnu Vardhan Burri | Principal Architect',
-        description: 'Founder Founder & CEO Chief Executive Officer at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
+        description: 'Founder & Chief Executive Officer at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.',
         creator: '@vishnuvardhanburri',
     },
     robots: {
@@ -107,7 +113,7 @@ export default async function RootLayout({
                 "name": "Vishnu Vardhan Burri",
                 "url": "https://www.vishnuvardhanburri.in",
                 "image": "https://www.vishnuvardhanburri.in/gallery/vishnu-me.jpg",
-                "jobTitle": ["Founder "Founder Founder & CEO Chief Executive Officer" Chief Executive Officer (CEO)", "Director", "Principal Architect", "Toptal Top 3% SDE/ML Engineer"],
+                "jobTitle": ["Founder "Founder & Chief Executive Officer" Chief Executive Officer (CEO)", "Director", "Principal Architect", "Toptal Top 3% SDE/ML Engineer"],
                 "worksFor": [
                     {
                         "@type": "Organization",
@@ -137,7 +143,7 @@ export default async function RootLayout({
                 "@id": "https://www.vishnuvardhanburri.in/#website",
                 "url": "https://www.vishnuvardhanburri.in",
                 "name": "Vishnu Vardhan Burri - CEO & Principal Architect",
-                "description": "Founder Founder & CEO Chief Executive Officer at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.",
+                "description": "Founder & Chief Executive Officer at XAVIRA Technologies | Designing High-Scale Backend Architecture & Production-AI Infrastructure.",
                 "publisher": {
                     "@id": "https://www.vishnuvardhanburri.in/#person"
                 }
